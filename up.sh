@@ -3,6 +3,9 @@
 
 workdir=$(pwd)
 
+
+sh x86_64/updaterepo.sh
+
 # Below command will backup everything inside the project folder
 git add --all .
 
