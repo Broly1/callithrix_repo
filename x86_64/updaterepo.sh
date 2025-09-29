@@ -1,19 +1,19 @@
 #!/bin/bash
 
-rm buildra_repo*
+rm callithrix_repo*
 
 echo "repo-add"
-repo-add -n -R buildra_repo.db.tar.gz *.pkg.tar.zst
+repo-add -n -R callithrix_repo.db.tar.gz *.pkg.tar.zst
 
 sleep 1
 
-rm buildra_repo.db
+rm callithrix_repo.db
 
-rm buildra_repo.files
+rm callithrix_repo.files
 
-mv buildra_repo.db.tar.gz buildra_repo.db
+mv callithrix_repo.db.tar.gz callithrix_repo.db
 
-mv buildra_repo.files.tar.gz buildra_repo.files
+mv callithrix_repo.files.tar.gz callithrix_repo.files
 
 echo "####################################"
 echo "Repo Updated!!"
